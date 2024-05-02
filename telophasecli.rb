@@ -5,21 +5,21 @@
 class Telophasecli < Formula
   desc "Open-Source AWS Control Tower"
   homepage "https://github.com/Santiago-Labs/telophasecli"
-  version "0.7.1"
+  version "0.7.2"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Santiago-Labs/telophasecli/releases/download/v0.7.1/telophasecli_Darwin_x86_64.tar.gz"
-      sha256 "02ab248680b8cdd7d5ca5ed300f9adfd88ec4dfd3ef3ca004fc3d17225643067"
+      url "https://github.com/Santiago-Labs/telophasecli/releases/download/v0.7.2/telophasecli_Darwin_x86_64.tar.gz"
+      sha256 "5285e1a0acd91bbee78cbec1fd1d659537c39fef5bd55c0883b8a48875e9fc73"
 
       def install
         bin.install "telophasecli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Santiago-Labs/telophasecli/releases/download/v0.7.1/telophasecli_Darwin_arm64.tar.gz"
-      sha256 "e4b0f978a8d5522b300ab1914025a6248a22f069a14945a159e3c4623a500a52"
+      url "https://github.com/Santiago-Labs/telophasecli/releases/download/v0.7.2/telophasecli_Darwin_arm64.tar.gz"
+      sha256 "759c68141dbc76a8ff5b7ccd0cc7221cdd606df08e15d45b2038f2b3c2817ea8"
 
       def install
         bin.install "telophasecli"
@@ -29,16 +29,16 @@ class Telophasecli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Santiago-Labs/telophasecli/releases/download/v0.7.1/telophasecli_Linux_x86_64.tar.gz"
-      sha256 "3241e84726456e5ff7a2a84badc6f8e443e3ce69528599eb511ebf0fd086f6fe"
+      url "https://github.com/Santiago-Labs/telophasecli/releases/download/v0.7.2/telophasecli_Linux_x86_64.tar.gz"
+      sha256 "afa811bf3f393c87d84234a6da9cbc2db6a10c35a93adc167aefa7e34d0eec9c"
 
       def install
         bin.install "telophasecli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Santiago-Labs/telophasecli/releases/download/v0.7.1/telophasecli_Linux_arm64.tar.gz"
-      sha256 "329fed9f42a46f97bde51e69caa6cabe141eb71e184879aec389e0bb3bbb27c6"
+      url "https://github.com/Santiago-Labs/telophasecli/releases/download/v0.7.2/telophasecli_Linux_arm64.tar.gz"
+      sha256 "dc11680e83e45e4947bcddbc17ea38700d935813abcc358adffd2450a3881a34"
 
       def install
         bin.install "telophasecli"
